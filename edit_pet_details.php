@@ -102,6 +102,7 @@ if(isset($_POST['submit']))
 	<input type="date" name="death" value="<?= $death;?>" required></br>
 
 	<input type="submit" name="submit" value="Submit">
+	<button type="submit1" name="back" ><a href="list.php">Back</a></button>
 </form>
 
 	

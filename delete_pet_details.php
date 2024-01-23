@@ -56,13 +56,13 @@ $url = $GLOBALS['URLNAME']."/api/delete.php";
 	<h1>Do you really want to delete this Pet Details ?</h1>
 	<form method="post" enctype="mutipart/form-data">
 		<button type="submit" name="delete">Delete</button>
-		<button type="submit1" name="back" ><a href="index.php">Back</a></button>
+		<button type="submit1" name="back" ><a href="list.php">Back</a></button>
 	</form>
 
 </body>
 <script type="text/javascript">
 	function back() {
-			<?php $url = $GLOBALS['URLNAME']."/index.php"; ?>
+			<?php $url = $GLOBALS['URLNAME']."/list.php"; ?>
 			window.alert("Do you want to go back ?");
 			window.location.href = '<?=$url?>';
 	}

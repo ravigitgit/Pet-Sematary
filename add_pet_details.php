@@ -16,6 +16,8 @@ function post_function($url,$myvars)
 
 }
 
+$url = $GLOBALS['URLNAME']."/list.php";
+
 if(isset($_POST['submit']))
 {
 	$name = $_POST['name'];
@@ -45,6 +47,7 @@ if(isset($_POST['submit']))
 
 	if($data_array['ResponseStatus'] == 200){
 		echo "data submit succesfully";
+		header('Location: list.php');
 	}
 
 }
